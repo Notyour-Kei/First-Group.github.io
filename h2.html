@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<style>
+	body{
+		background-color:white;
+		color:black;
+	}
+	.dark-mode{
+		background-color:black;
+		color:white
+	}
+</style>
+<head>
+	<title>Dan</title>
+	<script src="js1.js"></script>
+ </head>
+  <body>
+
+	<script>
+	function getdate(){
+		var myDate = new Date();
+		alert(myDate.toLocaleString( ));
+		}
+	</script>
+	<button style="width:inherit" onclick="getdate()">Click to get today's date</button>
+
+	<br><br><br>
+
+
+	<table border="1" style="position:center;">
+  	<tr>
+    	<td>First Number</td>
+    	<td><input type="text" id="first"/></td>
+  	</tr>
+  	<tr>
+    	<td>Second Number</td>
+    	<td><input type="text" id="second"/></td>
+  	</tr>
+  	<tr>
+    	<td colspan="2" >
+      		&nbsp;
+      		<button style="width:inherit" onclick="add()">+</button>
+      		&nbsp;
+      		<button style="width:inherit" onclick="subtract()">-</button>
+      		&nbsp;
+      		<button style="width:inherit" onclick="times()">*</button>
+      		&nbsp;
+      		<button style="width:inherit" onclick="devide()">/</button>
+    	</td>
+  	</tr>
+  	<tr>
+    	<td colspan="2" rowspan="2">
+      		<p id="result"></p>
+    	</td>
+  	</tr>
+	</table>
+
+
+
+	<br><br><br>
+
+	<p>Please insert your gender</p>
+
+	<button onclick="gender()">input your gender by clicking HERE</button><br><br>
+
+	<p>Dark mode</p>
+
+	<button onclick="dark()">Toggle to dark/light mode</button><br><br>
+
+	<p>A little game</p>
+
+    <button onclick="game()">A game about number guessing</button><br><br>
+
+    <p>I really have no idea where to use swich so I create this</p>
+
+    <button onclick="switchcase()">Just a simple demo</button><br><br>
+
+    <p>Please insert a number that is smaller than 100, then it will give its muiltiple.</p>
+
+	<button onclick="Numbera()">Insert the number</button><br><br>
+
+</body>	
